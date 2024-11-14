@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://mods/Kapyu.CoolMappy/Scenes/Map/Zones/kapyumap_zone.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Map/Zones/tent_zone.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://mods/Kapyu.CoolMappy/Scenes/Night_WorldEnvironment.gd" type="Script" id=5]
 [ext_resource path="res://mods/Kapyu.CoolMappy/Scenes/kapyu_map.gd" type="Script" id=6]
 [ext_resource path="res://Assets/world_env.tres" type="Environment" id=7]
+[ext_resource path="res://Scenes/Map/Zones/void_zone.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/Map/Zones/tutorial_zone.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/Map/Zones/IslandZones/island_tiny_zone.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/Map/Zones/IslandZones/island_med_zone.tscn" type="PackedScene" id=11]
@@ -26,24 +27,21 @@ light_energy = 0.12
 light_negative = true
 
 [node name="spawn_position" type="Position3D" parent="."]
-transform = Transform( 0.761731, 0, 0.647894, 0, 1, 0, -0.647894, 0, 0.761731, -1.19116, -0.251807, 0.281453 )
+transform = Transform( 0.761731, 0, 0.647894, 0, 1, 0, -0.647894, 0, 0.761731, 23.5468, -0.251815, 48.848 )
 
 [node name="tutorial_spawn_position" type="Position3D" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.44517, 0.530683, 5.17347 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.1831, 0.530675, 53.74 )
 
 [node name="zones" type="Node" parent="."]
 
 [node name="tent_zone" parent="zones" instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.501282, 0.713387, -400.066 )
-
-[node name="hub_building_zone" parent="zones" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 128.986, -0.909164, -405.098 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.8525, 0.713387, -491.119 )
 
 [node name="aquarium_zone" parent="zones" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -131.437, 3.33302, -396.581 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -146.788, 3.33302, -487.634 )
 
 [node name="tutorial_zone" parent="zones" instance=ExtResource( 9 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 280.806, 0.227589, -397.807 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 265.455, 0.227589, -488.86 )
 
 [node name="island_tiny_zone" parent="zones" instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1261.2, 2.351, 0.904 )
@@ -55,4 +53,10 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1261.2, 2.351, 1278.9 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.8, 2.351, 1277.9 )
 
 [node name="main_zone" parent="zones" instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60.6854, -0.940866, 64.7659 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 109.332, 0.923836, 7.81341 )
+
+[node name="hub_building_zone" parent="zones" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 113.635, -0.909164, -496.151 )
+
+[node name="void_zone" parent="zones" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -310.594, 0.294, -490.46 )
