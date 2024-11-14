@@ -1,0 +1,11 @@
+{
+    "Id": "Kapyu.CoolMappy",
+    "PackPath": "Kapyu.CoolMappy.pck",
+    "Dependencies": ["Sulayre.Lure"],
+    "Metadata": {
+        "Name": "WebLake",
+        "Author": "Kapyu",
+        "Version": "1.2.3",
+        "Description": "GO FISHING AT LAKE"
+  }
+}
